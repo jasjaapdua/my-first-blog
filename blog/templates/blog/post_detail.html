@@ -1,6 +1,7 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<div class="post-container">
     <article class="post">
         <aside class="actions">
             {% if user.is_authenticated %}
@@ -17,4 +18,5 @@
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </article>
+</div>
 {% endblock %}

@@ -12,6 +12,7 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    text-align: center;
 }
 
 h1,
@@ -44,7 +45,7 @@ h4 {
 }
 
 .post {
-    margin-bottom: 70px;
+    margin-bottom: 10px;
 }
 
 .post h2 a,
@@ -67,4 +68,40 @@ h4 {
 .btn-secondary:hover {
     color: #FFFFFF;
     background-color: #C25100;
+}
+
+#read-more-button {
+    color:#FFFFFF;
+    padding: 10px;
+    border-color: #000000;
+    background-color: #C25100;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#read-more-button:hover
+{
+    color:#000000;
+    border-color: #000000;
+    background-color: #ff6a00;
+}
+
+#post-list-title:hover
+{
+    color:#C25100;
+}
+
+#post-list-title
+{
+    text-decoration: none;
+}
+
+.post-container
+{
+    max-width: 800px;
+    margin:auto;
+    background-color: #f9d6b1;
+    padding: 35px;
+    margin-bottom: 50px;
+    border-radius: 25px;
 }

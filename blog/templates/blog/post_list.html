@@ -2,12 +2,15 @@
 
 {% block content %}
     {% for post in posts %}
+    <div class="post-container">
         <article class="post">
             <time class="date">
                 {{ post.published_date }}
             </time>
-            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <h2><a id="post-list-title"  href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <p>{{ post.text|slice:":100"|linebreaksbr }}</p>
+            <a id="read-more-button" href="{% url 'post_detail' pk=post.pk %}">Read More</a>
         </article>
+    </div>
     {% endfor %}
 {% endblock%}
