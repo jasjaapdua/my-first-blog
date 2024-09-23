@@ -105,3 +105,24 @@ h4 {
     margin-bottom: 50px;
     border-radius: 25px;
 }
+
+.form-container
+{
+    max-width: 800px;
+    margin:auto;
+    background-color: #f9d6b1;
+    padding: 35px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+}
+
+#alert 
+{
+    max-width: 800px;
+    margin:auto;
+    background-color: #8dc28c;
+    padding: 35px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    color: black;
+}

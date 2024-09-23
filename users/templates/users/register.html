@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+
+<h2>Become a Writer!</h2>
+
+{% block content %}
+    <div class="post-container">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+{% endblock content%}
